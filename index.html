@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text with Alphabet Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="live">Live Audio to Text</h1>
+    <button id="startButton">Start Listening</button>
+    <button id="stopButton" style="display: none;">Stop Recording</button> <!-- Initially hidden -->
+    <div id="transcription"></div>
+
+    <input type="text" id="textInput" placeholder="Enter text...">
+    <button onclick="animateText()">Animate</button>
+    <div id="animationContainer"></div>
+
+    <div id="output"></div>
+    <button id="startButtonMalayalam">Start Recording (Malayalam)</button>
+    <button id="stopButtonMalayalam">Stop Recording (Malayalam)</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

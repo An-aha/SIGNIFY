@@ -1,0 +1,35 @@
+/* animatestyle.css */
+body{
+    background-color: #967bb6;
+}
+#live{
+    color: #ffffff;
+}
+#animationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-top: 10px;
+    overflow: hidden; /* Hides the overflow so that letters don't move outside the container */
+}
+
+.letterImage {
+    width: 600px;
+    height: 500px;
+    margin: 5px;
+    border: 1px solid rgb(56, 27, 87);
+    opacity: 0; /* Initially hidden */
+    animation: flyIn 0.1s ease forwards; /* Animation effect */
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
